@@ -20,7 +20,6 @@ const JobsProvider = props => {
 	const BASE_URL = '/positions.json';
 
 	useEffect(() => {
-		
 		const cancelToken = axios.CancelToken.source();
 		axios
 			.get(BASE_URL, {

@@ -6,7 +6,6 @@ import {
 	makeStyles,
 } from '@material-ui/core';
 import InputContext from '../contexts/InputContext';
-import JobsContext from '../contexts/JobsContext';
 
 const useStyles = makeStyles(theme => ({
 	search: {
@@ -22,10 +21,6 @@ const useStyles = makeStyles(theme => ({
 const SearchForm = () => {
 	const classes = useStyles();
 	const { description, location, fulltime, setDescription, setLocation, setFulltime}  = useContext(InputContext);
-	const { fetchJobs } = useContext(JobsContext);
-	const params = {
-		description, location, fulltime
-	}
 
 	return (
 		<div className={classes.search} >
