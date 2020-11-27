@@ -20,10 +20,17 @@ const useStyles = makeStyles(theme => ({
 
 const SearchForm = () => {
 	const classes = useStyles();
-	const { description, location, fulltime, setDescription, setLocation, setFulltime}  = useContext(InputContext);
+	const {
+		description,
+		location,
+		fulltime,
+		setDescription,
+		setLocation,
+		setFulltime,
+	} = useContext(InputContext);
 
 	return (
-		<div className={classes.search} >
+		<div className={classes.search}>
 			<TextField
 				name="description"
 				label="Description"

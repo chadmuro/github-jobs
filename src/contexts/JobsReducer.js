@@ -1,4 +1,4 @@
-import { GET_DATA, ERROR } from './JobsTypes';
+import { GET_DATA, ERROR, UPDATE_HAS_NEXT_PAGE } from './JobsTypes';
 
 export const JobsReducer = (state, action) => {
 	switch (action.type) {
@@ -15,6 +15,11 @@ export const JobsReducer = (state, action) => {
 				loading: false,
 				error: action.payload.error,
 				jobs: [],
+			};
+		case UPDATE_HAS_NEXT_PAGE:
+			return {
+				...state,
+				hasNextPage: action.payload.hasNextPage,
 			};
 		default:
 			return state;

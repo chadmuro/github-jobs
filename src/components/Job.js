@@ -15,13 +15,14 @@ import {
 
 const useStyles = makeStyles(theme => ({
 	card: {
+		marginTop: theme.spacing(2),
 		marginBottom: theme.spacing(2),
 	},
 	main: {
 		display: 'flex',
 	},
 	mainBottom: {
-		marginBottom: theme.spacing(2)
+		marginBottom: theme.spacing(2),
 	},
 	content: {
 		flex: 1,
@@ -33,10 +34,10 @@ const useStyles = makeStyles(theme => ({
 	},
 	media: {
 		margin: theme.spacing(2, 1, 0, 1),
-    },
-    description: {
-        padding: theme.spacing(0, 2)
-    },
+	},
+	description: {
+		padding: theme.spacing(0, 2),
+	},
 	image: {
 		maxWidth: '100px',
 	},
