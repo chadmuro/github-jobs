@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Container } from '@material-ui/core';
+import Header from './components/Header';
 import Job from './components/Job';
 import JobsPagination from './components/JobsPagination';
 import SearchForm from './components/SearchForm';
@@ -10,6 +11,7 @@ const App = () => {
 
 	return (
 		<Container maxWidth="md">
+			<Header />
 			<SearchForm />
 			<JobsPagination />
 			{loading && <h1>Loading...</h1>}
