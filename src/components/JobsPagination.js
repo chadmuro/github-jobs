@@ -15,6 +15,7 @@ const JobsPagination = () => {
 		<div>
 			<Pagination
 				count={hasNextPage ? page + 1 : page}
+				page={page}
 				shape="rounded"
 				color="primary"
 				onChange={handleChange}
