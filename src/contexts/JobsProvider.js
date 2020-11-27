@@ -18,7 +18,8 @@ const JobsProvider = props => {
 
 	const { jobs, loading, error, hasNextPage } = state;
 
-	const BASE_URL = '/positions.json';
+	const BASE_URL =
+		'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json';
 
 	useEffect(() => {
 		const cancelToken1 = axios.CancelToken.source();
